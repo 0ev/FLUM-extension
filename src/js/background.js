@@ -1,7 +1,6 @@
 import "../img/icon-128.png";
 import "../img/icon-34.png";
 import { Parser } from "m3u8-parser";
-var isLive = false;
 
 class CircularBuffer {
   constructor(size) {
@@ -72,6 +71,4 @@ const runBuffer = (m3u8text) => {
   }
 
   console.log(buffer.peek());
-
-  // wait 2 seconds before fetching the m3u8 file again
 };
